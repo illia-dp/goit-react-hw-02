@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import Description from './components/Descriprtion/Description.jsx';
 import Options from './components/Options/Options';
 import Feedback from './components/Feedback/Feedback';
 import Notification from './components/Notification/Notification.jsx'
@@ -27,8 +28,7 @@ const App = () => {
   return (
     <div className="container">
 
-      <h1 className="hero_title">Sip Happens Café</h1>
-      <p className="hero_text">Please leave your feedback about our service by selecting one of the options below.</p>
+      <Description />
 
       <Options
         updateFeedback={updateFeedback}
