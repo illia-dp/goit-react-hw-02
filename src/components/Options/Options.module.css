@@ -1,0 +1,25 @@
+.list {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.set_btn {
+    padding: 6px;
+    border: 2px solid rgb(104, 104, 104);
+    border-radius: 8px;
+    transition: background-color var(--animation);
+}
+
+.set_btn:hover,
+.set_btn:focus,
+.reset_btn:hover,
+.reset_btn:focus{
+    background-color: rgb(151, 151, 151);
+}
+
+.reset_btn {
+    composes: set_btn;
+    background-color: rgb(104, 104, 104);
+    color: white;
+}
